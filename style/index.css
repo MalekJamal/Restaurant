@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Mono:ital,wght@1,700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+}
+
+#logo-top{
+    width: 100px;
+    
+    overflow: hidden;
+    float: left;
+  
+}
+
+
+nav{
+    background-color: rgb(246, 134, 6) ;
+    display: grid;
+    place-items: center; 
+    display:flexbox;
+    width: 100%;
+   
+    
+}
+
+nav ul {
+    list-style-type:none ;
+}
+nav ul a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(18, 17, 17);
+    transition: 0.3s ease-in;
+    font-size: 20px;
+    margin-left: 40px;
+}
+nav a{
+    list-style-type:none ;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    transition: 0.3s ease-in;
+    font-size: 20px;
+}
+
+nav ul a:hover{
+    background-color: white;
+    color: #000;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: white;
+    color: #000;
+    font-weight: bold;
+}
+main{
+    min-height: calc(100vh - 204px - 200px);/*min-height = ( 100vh - height of the header - height of the footer) */
+    width: 90vw;
+    padding: 30px 30px;
+    margin-left: 40px;
+}
+
+
+
+.footer{
+    padding: 40px 0px;
+    background-color: rgb(246, 134, 6);
+   
+    
+}
+
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color:white;
+}
+
+.footer .social a{
+    font-size: 25px;
+    color: inherit;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity: 1.9;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover{
+    opacity: 1.9;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .items{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .items{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
