@@ -9,7 +9,7 @@
 
 #logo-top{
     width: 100px;
-    
+    border-radius: 25px;
     overflow: hidden;
     float: left;
   
@@ -17,7 +17,7 @@
 
 
 nav{
-    background-color: rgb(246, 134, 6) ;
+    background-color: rgb(255, 106, 0);
     display: grid;
     place-items: center; 
     display:flexbox;
@@ -28,6 +28,7 @@ nav{
 
 nav ul {
     list-style-type:none ;
+    font-weight: bold;
 }
 nav ul a{
     display: inline-block;
@@ -49,14 +50,15 @@ nav a{
 }
 
 nav ul a:hover{
-    background-color: white;
+    background-color: rgb(234, 218, 94);
     color: #000;
     font-weight: bold;
 }
 nav a:hover{
-    background-color: white;
+    background-color: rgb(234, 218, 94);
     color: #000;
     font-weight: bold;
+    
 }
 main{
     min-height: calc(100vh - 204px - 200px);/*min-height = ( 100vh - height of the header - height of the footer) */
@@ -65,11 +67,44 @@ main{
     margin-left: 40px;
 }
 
-
+#sectionId{
+    background-color: rgb(237, 164, 140);
+    text-align: center;
+    border-radius: 30px;
+    width: 100%;
+    height: inherit;
+    padding: 15px;
+    margin: 10px;
+}
+label{
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    
+    
+}
+select{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(237, 164, 140);
+    
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px;
+    font-size: 30px;
+    background-color: rgb(248, 205, 198);
+    color: #000;
+}
 
 .footer{
     padding: 40px 0px;
-    background-color: rgb(246, 134, 6);
+    background-color: rgb(255, 106, 0);
    
     
 }
@@ -78,13 +113,13 @@ main{
 .footer .social{
     text-align: center;
     padding-bottom: 25px;
-    color:white;
+    color:rgb(0, 0, 0);
 }
 
 .footer .social a{
     font-size: 25px;
     color: inherit;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     width: 40px;
     height: 40px;
     line-height: 38px;
@@ -93,6 +128,7 @@ main{
     border-radius: 50%;
     margin: 0px 8px;
     opacity: 0.75;
+
 }
 
 .footer .social a:hover{
@@ -106,6 +142,7 @@ main{
     line-height: 1.7;
     margin-bottom: 0;
     text-align: center;
+    font-weight: bold;
 }
 
 .footer ul li a{
@@ -128,6 +165,7 @@ main{
     font-size: 14px;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 
