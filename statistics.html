@@ -17,6 +17,24 @@
       referrerpolicy="no-referrer"
     />
     <title>Hot Spot</title>
+    <style>
+      #btn {
+        margin-top: 35px;
+        text-align: center;
+      }
+      #link,
+      button {
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 15px;
+        border: none;
+        background-color: rgb(225, 118, 31);
+      }
+      #link,
+      button :hover {
+        transition: all 0.5s;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -29,42 +47,44 @@
         <ul>
           <a href="./index.html"><li>Home</li></a>
           <a href="#"><li>Meals</li></a>
-          <a href="#"><li>Order</li></a>
+          <a href="./statistics.html"><li>Statistics</li></a>
           <a href="#"><li>Location</li></a>
           <a href="#"><li>About Us</li></a>
         </ul>
       </nav>
     </header>
     <main>
-
+      <section id="tableSection"></section>
+      <section id="btn">
+        <a id="link" href="./index.html"><button>Back Home</button></a>
+      </section>
     </main>
     <footer class="footer">
-        <div class="social">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-snapchat"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-        <ul class="list">
-          <li>
-            <a href="./index.html">Home</a>
-          </li>
-          <li>
-            <a href="#">Meals</a>
-          </li>
-          <li>
-            <a href="#">Order</a>
-          </li>
-          <li>
-            <a href="#">Location</a>
-          </li>
-          <li>
-            <a href="3">About Us</a>
-          </li>
-        </ul>
-        <p class="copyright">HOT CHILI @ 2022</p>
-      </footer>
-      <script src="./js/app.js"></script>
-    </body>
-  </html>
-  
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Meals</a>
+        </li>
+        <li>
+          <a href="./">Statistics</a>
+        </li>
+        <li>
+          <a href="#">Location</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+      </ul>
+      <p class="copyright">HOT CHILI @ 2022</p>
+    </footer>
+    <script src="./js/statistics.js"></script>
+  </body>
+</html>
