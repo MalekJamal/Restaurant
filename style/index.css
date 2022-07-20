@@ -110,10 +110,16 @@ input {
     color: #000;
 }
 
-#chart {
+#chart, #chart2 {
     text-align: center;
-    width: 450px;
+    width: 350px;
     margin: auto;
+    padding: 0;
+}
+
+#chart2 {
+    text-align: center;
+    width: 550px;
     padding: 0;
 }
 

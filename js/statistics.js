@@ -15,9 +15,6 @@ let protein = [];
 let fat = [];
 
 function createTableHead() {
-  //console.log("1. create a table head")
-
-  //console.log(tableEl);
   tableEl.style.width = "100%";
   tableEl.style.fontSize = "30px";
   tableEl.style.backgroundColor = "#EADA5E";
@@ -156,14 +153,14 @@ function setNamesAndPrices() {
 }
 setNamesAndPrices();
 function barChart() {
-  const labels = [foodNames];
+  const labels = foodNames;
   const data = {
     labels: labels,
     datasets: [
       {
-        label: "My First Dataset",
-        data: [foodPrices],
-        backgroundColor: ["green", "red", "#F3f424", "blue", "#3AB4F2"],
+        label: "Price",
+        data: foodPrices,
+        backgroundColor: ["#EAAA0E"],
         hoverOffset: 50,
       },
     ],
@@ -174,6 +171,7 @@ function barChart() {
     data: data,
   };
 
-  const myChart = new Chart(document.getElementById("myChart"), config);
+  const myChart = new Chart(document.getElementById("myChart2"), config);
 }
 pieChartJs();
+barChart();
