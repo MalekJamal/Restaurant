@@ -40,6 +40,7 @@
         <form method="get" id="formId">
           <label for="foodName">Food Name</label><br />
           <input
+            required
             type="text"
             id="foodname"
             name="foodname"
@@ -47,20 +48,19 @@
           />
           <div>
             <label for="type">Food Type</label><br />
-            <select name="foodtype" id="foodtype">
-              <option value="fruitAndVegetables">Fruit and vegetables</option>
-              <option value="starchyFood">Starchy food</option>
-              <option value="dairy">Dairy</option>
-              <option value="protein">Protein</option>
-              <option value="fat">Fat</option>
+            <select name="foodtype" id="foodtype" required>
+              <option value="Fruit and vegetables">Fruit and vegetables</option>
+              <option value="Starchy food">Starchy food</option>
+              <option value="Dairy">Dairy</option>
+              <option value="Protein">Protein</option>
+              <option value="Fat">Fat</option>
             </select>
           </div>
           <label for="foodPrice">Price</label><br />
-          <input type="number" placeholder="5$" name="foodprice" />
+          <input type="number" placeholder="5 JD" required name="foodprice" />
           <input type="submit" value="Submit" id="submit" />
         </form>
       </section>
-
     </main>
     <footer class="footer">
       <div class="social">

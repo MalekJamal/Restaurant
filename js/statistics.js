@@ -4,10 +4,15 @@
 let sectionEl = document.getElementById("tableSection");
 // table
 let tableEl = document.createElement("table");
-//console.log(sectionEl);
 // create an array to store all drinks objects
 const foodArr = [];
-console.log("Food Array " + foodArr);
+const foodNames = [];
+const foodPrices = [];
+let fruitAndVegetables = [];
+let starchyFood = [];
+let dairy = [];
+let protein = [];
+let fat = [];
 
 function createTableHead() {
   //console.log("1. create a table head")
@@ -80,7 +85,95 @@ function getData() {
       foodArr.push(parseData[i]);
     }
   }
-  console.log(foodArr);
 }
 getData();
 render();
+
+function setType() {
+  if (foodArr != null) {
+    for (let i = 0; i < foodArr.length; i++) {
+      switch (foodArr[i].type) {
+        case "Fruit and vegetables":
+          fruitAndVegetables.push(foodArr[i].type);
+          break;
+        case "Starchy food":
+          starchyFood.push(foodArr[i].type);
+          break;
+        case "Dairy":
+          dairy.push(foodArr[i].type);
+          break;
+        case "Protein":
+          protein.push(foodArr[i].type);
+          break;
+        case "Fat":
+          fat.push(foodArr[i].type);
+          break;
+      }
+    }
+  }
+}
+setType();
+
+function pieChartJs() {
+  const labels = [
+    "Fruit and vegetables",
+    "Starchy food",
+    "dairy",
+    "protein",
+    "fat",
+  ];
+  const data = {
+    labels: labels,
+    datasets: [
+      {
+        label: "My First Dataset",
+        data: [
+          fruitAndVegetables.length,
+          starchyFood.length,
+          dairy.length,
+          protein.length,
+          fat.length,
+        ],
+        backgroundColor: ["green", "red", "#F3f424", "blue", "#3AB4F2"],
+        hoverOffset: 50,
+      },
+    ],
+  };
+
+  const config = {
+    type: "pie",
+    data: data,
+  };
+
+  const myChart = new Chart(document.getElementById("myChart"), config);
+}
+
+function setNamesAndPrices() {
+  for (let i = 0; i < foodArr.length; i++) {
+    foodNames.push(foodArr[i].foodName);
+    foodPrices.push(foodArr[i].price);
+  }
+}
+setNamesAndPrices();
+function barChart() {
+  const labels = [foodNames];
+  const data = {
+    labels: labels,
+    datasets: [
+      {
+        label: "My First Dataset",
+        data: [foodPrices],
+        backgroundColor: ["green", "red", "#F3f424", "blue", "#3AB4F2"],
+        hoverOffset: 50,
+      },
+    ],
+  };
+
+  const config = {
+    type: "bar",
+    data: data,
+  };
+
+  const myChart = new Chart(document.getElementById("myChart"), config);
+}
+pieChartJs();

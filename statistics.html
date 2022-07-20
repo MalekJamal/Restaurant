@@ -16,8 +16,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Hot Spot</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Hot Chili</title>
     <style>
+      
       #btn {
         margin-top: 35px;
         text-align: center;
@@ -58,6 +61,11 @@
       <section id="btn">
         <a id="link" href="./index.html"><button>Back Home</button></a>
       </section>
+      <h1 id="h1" style="text-align: center;margin: 25px;">Statistics Of Food Types</h1>
+      <div id="chart" >
+        
+        <canvas id="myChart" ></canvas> 
+      </div>
     </main>
     <footer class="footer">
       <div class="social">
@@ -85,6 +93,7 @@
       </ul>
       <p class="copyright">HOT CHILI @ 2022</p>
     </footer>
+
     <script src="./js/statistics.js"></script>
   </body>
 </html>

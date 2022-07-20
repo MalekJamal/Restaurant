@@ -13,6 +13,11 @@ function Food(foodId, foodName, type, price) {
   this.price = price;
   allFoods.push(this);
 }
+new Food(genereteId(), "Burger", "Fat", 12);
+new Food(genereteId(), "Cheese", "Dairy", 8);
+new Food(genereteId(), "Soup", "Fruit and vegetables", 3);
+new Food(genereteId(), "Mansuf", "Protein", 20);
+new Food(genereteId(), "Bread", "Starchy food", 7);
 
 function genereteId() {
   return id++;
@@ -29,6 +34,11 @@ function handleSubmit(event) {
 
   new Food(genereteId(), foodName, foodType, foodPrice);
   saveData();
+  Swal.fire(
+    "Good job!",
+    `${foodName} Is Added With Price ${foodPrice} JD <br>Thank You!👨‍🍳`,
+    "success"
+  );
 }
 
 // to save data from localStorage
