@@ -20,7 +20,6 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Hot Chili</title>
     <style>
-      
       #btn {
         margin-top: 35px;
         text-align: center;
@@ -30,6 +29,7 @@
         font-size: 30px;
         padding: 10px;
         border-radius: 15px;
+        font-weight: bold;
         border: none;
         background-color: rgb(225, 118, 31);
       }
@@ -58,14 +58,22 @@
     </header>
     <main>
       <section id="tableSection"></section>
+
+      <h1 id="h1" style="text-align: center; margin: 25px; font-weight: bold">
+        Statistics Of Food Types
+      </h1>
+      <div id="chart">
+        <canvas id="myChart"></canvas>
+      </div>
+      <h1 id="h1" style="text-align: center; margin: 25px; font-weight: bold">
+        Names With Prices
+      </h1>
+      <div id="chart2">
+        <canvas id="myChart2"></canvas>
+      </div>
       <section id="btn">
         <a id="link" href="./index.html"><button>Back Home</button></a>
       </section>
-      <h1 id="h1" style="text-align: center;margin: 25px;">Statistics Of Food Types</h1>
-      <div id="chart" >
-        
-        <canvas id="myChart" ></canvas> 
-      </div>
     </main>
     <footer class="footer">
       <div class="social">
