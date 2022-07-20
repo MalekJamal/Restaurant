@@ -1,36 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Mono:ital,wght@1,700&display=swap');
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     font-family: "Montserrat";
     box-sizing: border-box;
 }
 
-#logo-top{
+#logo-top {
     width: 100px;
     border-radius: 25px;
     overflow: hidden;
     float: left;
-  
+
 }
 
 
-nav{
+nav {
     background-color: rgb(255, 106, 0);
     display: grid;
-    place-items: center; 
-    display:flexbox;
+    place-items: center;
+    display: flexbox;
     width: 100%;
-   
-    
+
+
 }
 
 nav ul {
-    list-style-type:none ;
+    list-style-type: none;
     font-weight: bold;
 }
-nav ul a{
+
+nav ul a {
     display: inline-block;
     text-decoration: none;
     padding: 20px;
@@ -39,8 +40,9 @@ nav ul a{
     font-size: 20px;
     margin-left: 40px;
 }
-nav a{
-    list-style-type:none ;
+
+nav a {
+    list-style-type: none;
     display: inline-block;
     text-decoration: none;
     padding: 20px;
@@ -49,25 +51,28 @@ nav a{
     font-size: 20px;
 }
 
-nav ul a:hover{
+nav ul a:hover {
     background-color: rgb(234, 218, 94);
     color: #000;
     font-weight: bold;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: rgb(234, 218, 94);
     color: #000;
     font-weight: bold;
-    
+
 }
-main{
-    min-height: calc(100vh - 204px - 200px);/*min-height = ( 100vh - height of the header - height of the footer) */
+
+main {
+    min-height: calc(100vh - 204px - 200px);
+    /*min-height = ( 100vh - height of the header - height of the footer) */
     width: 90vw;
     padding: 30px 30px;
     margin-left: 40px;
 }
 
-#sectionId{
+#sectionId {
     background-color: rgb(237, 164, 140);
     text-align: center;
     border-radius: 30px;
@@ -76,22 +81,25 @@ main{
     padding: 15px;
     margin: 10px;
 }
-label{
+
+label {
     width: 100%;
     font-size: 30px;
     font-weight: bold;
-    
-    
+
+
 }
-select{
+
+select {
     width: 100%;
     text-align: center;
     font-weight: bold;
     font-size: 30px;
     background-color: rgb(237, 164, 140);
-    
+
 }
-input{
+
+input {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -102,21 +110,28 @@ input{
     color: #000;
 }
 
-.footer{
+#chart {
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    padding: 0;
+}
+
+.footer {
     padding: 40px 0px;
     background-color: rgb(255, 106, 0);
-   
-    
+
+
 }
 
 
-.footer .social{
+.footer .social {
     text-align: center;
     padding-bottom: 25px;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
-.footer .social a{
+.footer .social a {
     font-size: 25px;
     color: inherit;
     border: 1px solid rgb(0, 0, 0);
@@ -131,10 +146,11 @@ input{
 
 }
 
-.footer .social a:hover{
+.footer .social a:hover {
     opacity: 1.9;
 }
-.footer ul{
+
+.footer ul {
     margin-top: 0;
     padding: 0;
     list-style: none;
@@ -145,7 +161,7 @@ input{
     font-weight: bold;
 }
 
-.footer ul li a{
+.footer ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     opacity: 0.8;
@@ -156,10 +172,11 @@ input{
     padding: 0 15px;
 }
 
-.footer ul li a:hover{
+.footer ul li a:hover {
     opacity: 1.9;
 }
-.footer .copyright{
+
+.footer .copyright {
     margin-top: 15px;
     text-align: center;
     font-size: 14px;
@@ -170,15 +187,15 @@ input{
 
 
 @media screen and (max-width: 1000px) {
-    .items{
-        grid-template-columns: repeat(2,1fr);
+    .items {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
+
 }
 
 @media screen and (max-width: 768px) {
-    .items{
-        grid-template-columns: repeat(1,1fr);
+    .items {
+        grid-template-columns: repeat(1, 1fr);
     }
-    
+
 }
